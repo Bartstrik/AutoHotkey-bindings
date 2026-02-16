@@ -30,14 +30,6 @@
         Run("wt.exe -d C:\Users\bcstr")
 }
 
-!5::    ; Latex editor (Currently texmaker)
-{
-    if WinExist("ahk_exe texmaker.exe")
-        WinActivate()
-    else
-        Run("texmaker.exe")
-}
-
 !s::    ; Spotify
 {
     if WinExist("ahk_exe Spotify.exe")
@@ -81,4 +73,12 @@ runApp(appName) {  ; Run an app from AppsFolder
         WinActivate()
     else
         Run('"C:\Program Files\AutoHotkey\UX\AutoHotkeyUX.exe" "C:\Program Files\AutoHotkey\UX\ui-dash.ahk"')
+}
+
+!t::    ; Teams
+{
+    if WinExist("ahk_class TeamsWebView")
+        WinActivate()
+    else
+        Run("C:\Program Files\WindowsApps\MSTeams_26005.213.4315.4117_x64__8wekyb3d8bbwe\ms-teams.exe")
 }

@@ -16,7 +16,7 @@
 
 !3::    ; File explorer
 {
-    if WinExist("ahk_class CabinetWClass") ;
+    if WinExist("ahk_exe FPilot.exe") ;
         WinActivate()
     else
         Run("explorer.exe")

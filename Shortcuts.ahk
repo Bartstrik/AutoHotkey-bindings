@@ -8,7 +8,7 @@
 
 !2::    ; VScode
 {
-    if WinExist("Visual Studio Code") 
+    if WinExist("ahk_exe Code.exe") 
         WinActivate()
     else
         Run("C:\Users\bcstr\AppData\Local\Programs\Microsoft VS Code\Code.exe")

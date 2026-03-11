@@ -1,6 +1,6 @@
 ﻿!1::    ; Firefox
 {
-    if WinExist("Firefox")
+    if WinExist("ahk_exe firefox.exe")
         WinActivate() 
     else
         Run("Firefox")

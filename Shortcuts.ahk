@@ -35,7 +35,7 @@
     if WinExist("ahk_exe Spotify.exe")
         WinActivate()
     else
-        Run("spotify.exe")
+        Run("C:\Users\bcstr\AppData\Roaming\Spotify\Spotify.exe")
 }
 
 !w:: {
@@ -51,13 +51,13 @@ runApp(appName) {  ; Run an app from AppsFolder
    Return Run('explorer shell:appsFolder\' app.Path)
 }
 
-!q::    ; quartus
-{
-    if WinExist("ahk_exe quartus.exe")
-        WinActivate()
-    else
-        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Altera 24.1std.0.1077 Lite Edition\Quartus Prime Lite Edition 24.1std.0.1077\Quartus (Quartus Prime 24.1std).lnk")
-}
+;!q::    ; quartus
+;{
+;    if WinExist("ahk_exe quartus.exe")
+;        WinActivate()
+;    else
+;        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Altera 24.1std.0.1077 Lite Edition\Quartus Prime Lite Edition 24.1std.0.1077\Quartus (Quartus Prime 24.1std).lnk")
+;}
 
 !k::    ; kodi
 {
@@ -67,7 +67,7 @@ runApp(appName) {  ; Run an app from AppsFolder
         Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Kodi\Kodi")
 }
 
-!a::    ; autohokey dash
+!a::    ; autohotkey dash
 {
     if WinExist("ahk_class AutoHotkeyGUI")
         WinActivate()
@@ -80,5 +80,5 @@ runApp(appName) {  ; Run an app from AppsFolder
     if WinExist("ahk_class TeamsWebView")
         WinActivate()
     else
-        Run("C:\Program Files\WindowsApps\MSTeams_26005.213.4315.4117_x64__8wekyb3d8bbwe\ms-teams.exe")
+        Run("ms-teams.exe")
 }

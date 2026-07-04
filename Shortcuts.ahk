@@ -6,12 +6,12 @@
         Run("Firefox")
 }
 
-!2::    ; VScode
+!2::    ; Terminal
 {
-    if WinExist("ahk_exe Code.exe") 
+    if WinExist("ahk_class CASCADIA_HOSTING_WINDOW_CLASS")
         WinActivate()
     else
-        Run("C:\Users\bcstr\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+        Run("wt.exe -d C:\Users\bcstr")
 }
 
 !3::    ; File explorer
@@ -22,12 +22,12 @@
         Run("explorer.exe")
 }
 
-!4::    ; Terminal
+!4::    ; VScode
 {
-    if WinExist("ahk_class CASCADIA_HOSTING_WINDOW_CLASS")
+    if WinExist("ahk_exe Code.exe") 
         WinActivate()
     else
-        Run("wt.exe -d C:\Users\bcstr")
+        Run("C:\Users\bcstr\AppData\Local\Programs\Microsoft VS Code\Code.exe")
 }
 
 !s::    ; Spotify
